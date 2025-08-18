@@ -1,23 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
-  <defs>
-    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0%" stop-color="#7c5cff"/>
-      <stop offset="100%" stop-color="#4ee1a0"/>
-    </linearGradient>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="8" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
-  <rect width="512" height="512" rx="112" fill="#0f1014"/>
-  <g filter="url(#glow)">
-    <path d="M256 96c88 0 160 72 160 160s-72 160-160 160S96 344 96 256 168 96 256 96z" fill="none" stroke="url(#g)" stroke-width="20"/>
-    <path d="M176 320l80-192 80 192" fill="none" stroke="url(#g)" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="256" cy="256" r="18" fill="url(#g)"/>
-  </g>
+	<defs>
+		<linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+			<stop offset="0%" stop-color="#7c5cff"/>
+			<stop offset="100%" stop-color="#4ee1a0"/>
+		</linearGradient>
+		<filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+			<feGaussianBlur stdDeviation="8" result="blur"/>
+			<feMerge>
+				<feMergeNode in="blur"/>
+				<feMergeNode in="SourceGraphic"/>
+			</feMerge>
+		</filter>
+	</defs>
+	<rect width="512" height="512" rx="112" fill="#0f1014"/>
+	<g filter="url(#glow)">
+		<path d="M256 96c88 0 160 72 160 160s-72 160-160 160S96 344 96 256 168 96 256 96z" fill="none" stroke="url(#g)"
+			  stroke-width="20"/>
+		<path d="M176 320l80-192 80 192" fill="none" stroke="url(#g)" stroke-width="20" stroke-linecap="round"
+			  stroke-linejoin="round"/>
+		<circle cx="256" cy="256" r="18" fill="url(#g)"/>
+	</g>
 </svg>
-
-

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#0b0b0c"/>
+    <meta name="color-scheme" content="dark"/>
+    <title>Portfolio — Hashim</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet"/>
+    <link rel="stylesheet" href="../styles.css"/>
+    <link rel="icon" href="../assets/brand.svg" type="image/svg+xml"/>
+</head>
+<body>
+<header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+        <a class="brand" href="../index.html#home" aria-label="Go to home">
+            <img src="../assets/brand.svg" alt="Hashim logo" width="28" height="28"/>
+            <span>Hashim</span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul id="nav-menu" class="nav-list">
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#skills">Skills</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container section">
+    <div class="section-head">
+        <h2>Portfolio</h2>
+        <p>My personal website.</p>
+    </div>
+
+    <article class="card">
+        <div id="readme" class="prose" style="margin-bottom:16px;color:var(--muted)">Loading README…=</div>
+        <div class="badges">
+            <span class="badge">Java</span>
+            <span class="badge">Spigot</span>
+            <span class="badge">Gradle</span>
+        </div>
+        <h3 style="margin-top:22px">Source</h3>
+        <div class="repo-layout">
+            <div class="repo-tree" id="repo-tree"></div>
+            <div class="code-viewer">
+                <pre id="code-viewer">Select a file…</pre>
+            </div>
+        </div>
+    </article>
+</main>
+
+<footer class="site-footer container">
+    <p>© <span id="year"></span> Hashim • Keeping your eyes safe from the light &#x1F41E;</p>
+</footer>
+
+<script defer>
+    window.__PROJECT_REPO__ = {
+        owner: 'LuckyLuckiest',
+        repo: 'Portfolio',
+        branch: 'main'
+    };
+</script>
+<script src="../github.js" defer></script>
+<script src="../script.js" defer></script>
+</body>
+</html>
+
+
