@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b0b0c" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="description" content="Hashim — Security‑minded software engineer. CS graduate with a focus on cybersecurity, Java and Spring Boot, started coding with Minecraft in 2017." />
+    <meta property="og:title" content="Hashim — Portfolio" />
+    <meta property="og:description" content="Security‑minded software engineer • CS + Cybersecurity • Java & Spring Boot • Since Minecraft 2017" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/brand.svg" />
+    <link rel="icon" href="assets/brand.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Hashim — Portfolio</title>
+  </head>
+  <body>
+    <div class="bg fx-grid" aria-hidden="true"></div>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary">
+        <a class="brand" href="#home" aria-label="Go to top">
+          <img src="assets/brand.svg" alt="Hashim logo" width="28" height="28" />
+          <span>Hashim</span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul id="nav-menu" class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero container">
+        <div class="hero-content">
+          <h1>
+            Security‑minded<br />
+            <span class="accent">Software Engineer</span>
+          </h1>
+          <p class="lead">
+            CS graduate focused on <strong>cybersecurity</strong>. I began coding by building
+            Minecraft plugins in <strong>2017</strong>, and today I craft backend services in
+            <strong>Java</strong> with <strong>Spring Boot</strong> and distributed systems.
+          </p>
+          <div class="cta">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-ghost" href="assets/Hashim_Resume.pdf" download>Download Résumé</a>
+          </div>
+          <ul class="hero-tags" aria-label="Key focuses">
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>Cybersecurity</li>
+            <li>Distributed Systems</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="about" class="section container">
+        <div class="section-head">
+          <h2>About</h2>
+          <p>My journey started in Minecraft modding and server plugins, where I learned to turn ideas into tools other people actually use.</p>
+        </div>
+        <div class="grid two">
+          <div class="card">
+            <h3>Who I am</h3>
+            <p>
+              I'm a computer science graduate with a strong interest in cybersecurity and backend engineering. I enjoy designing clean APIs,
+              building resilient services, and making systems observable and secure by default.
+            </p>
+          </div>
+          <div class="card">
+            <h3>What I work with</h3>
+            <p>
+              Java, Spring Boot, REST, SQL/NoSQL, Docker, message queues, and cloud‑native tooling. I keep security in the loop: threat modeling,
+              OWASP practices, and secure code reviews.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section container">
+        <div class="section-head">
+          <h2>Skills</h2>
+          <p>Technologies I use and enjoy.</p>
+        </div>
+        <div class="skills">
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <div class="badges">
+              <span class="badge">Java</span>
+              <span class="badge">JavaScript</span>
+              <span class="badge">TypeScript</span>
+              <span class="badge">Python</span>
+              <span class="badge">SQL</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Frameworks & Platforms</h3>
+            <div class="badges">
+              <span class="badge">Spring Boot</span>
+              <span class="badge">Spring Security</span>
+              <span class="badge">Node.js</span>
+              <span class="badge">Docker</span>
+              <span class="badge">Kubernetes</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Security</h3>
+            <div class="badges">
+              <span class="badge">OWASP</span>
+              <span class="badge">Threat Modeling</span>
+              <span class="badge">Secure Coding</span>
+              <span class="badge">SAST/DAST</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Tools</h3>
+            <div class="badges">
+              <span class="badge">Git</span>
+              <span class="badge">Linux</span>
+              <span class="badge">Postman</span>
+              <span class="badge">Grafana</span>
+              <span class="badge">Kafka</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section container">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p>A few things I've built or hacked on.</p>
+        </div>
+        <div class="grid three">
+          <article class="card project">
+            <h3>Distributed Task Queue</h3>
+            <p>
+              Horizontally scalable task processing system with idempotent workers, backoff, and metrics.
+            </p>
+            <ul class="tags">
+              <li>Spring Boot</li>
+              <li>Kafka</li>
+              <li>Docker</li>
+            </ul>
+            <div class="project-actions">
+              <a class="chip chip-action" href="projects/task-queue.html">View Project</a>
+            </div>
+          </article>
+          <article class="card project">
+            <h3>Minecraft Plugin Suite</h3>
+            <p>
+              A collection of Bukkit/Spigot plugins focused on moderation, QoL, and performance insights.
+            </p>
+            <ul class="tags">
+              <li>Java</li>
+              <li>Bukkit/Spigot</li>
+              <li>Gradle</li>
+            </ul>
+            <div class="project-actions">
+              <a class="chip chip-action" href="projects/mc-plugins.html">View Project</a>
+            </div>
+          </article>
+          <article class="card project">
+            <h3>Vulnerability Scanner CLI</h3>
+            <p>
+              Simple dependency scanner and report generator with SBOM export and CVE lookups.
+            </p>
+            <ul class="tags">
+              <li>Python</li>
+              <li>Security</li>
+              <li>CLI</li>
+            </ul>
+            <div class="project-actions">
+              <a class="chip chip-action" href="projects/vuln-scanner.html">View Project</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>Want to collaborate or have an opportunity in mind? Let's talk.</p>
+        </div>
+        <div class="contact-grid">
+          <a class="contact-item card" href="https://github.com/LuckyLuckiest" target="_blank" rel="noopener" aria-label="GitHub" data-brand="github">
+            <svg class="icon" width="36" height="36" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.18-3.37-1.18-.46-1.15-1.12-1.46-1.12-1.46-.91-.62.07-.6.07-.6 1 .07 1.52 1.03 1.52 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.26.1-2.63 0 0 .85-.27 2.77 1.02a9.6 9.6 0 0 1 5.04 0c1.92-1.29 2.77-1.02 2.77-1.02.55 1.37.2 2.38.1 2.63.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.69-4.57 4.94.36.31.68.92.68 1.86v2.76c0 .26.18.58.69.48A10 10 0 0 0 12 2z"/>
+            </svg>
+          </a>
+          <a class="contact-item card" href="https://www.linkedin.com/in/yourhandle" target="_blank" rel="noopener" aria-label="LinkedIn" data-brand="linkedin">
+            <svg class="icon" width="36" height="36" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.62-1.84 3.33-1.84 3.56 0 4.22 2.34 4.22 5.39v6.34zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/>
+            </svg>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <p>© <span id="year"></span> Hashim • Keeping your eyes safe from the light &#x1F41E;</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+  </html>
+
+
