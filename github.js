@@ -201,11 +201,13 @@ function showAuthPrompt(targetEl, onSave) {
         const container = document.createElement('ul');
         if (name) {
             const details = document.createElement('details');
-            details.open = true;
+            // details.open = true; // by default have the folders collapsed
             const summary = document.createElement('summary');
             summary.textContent = name;
+
             details.appendChild(summary);
             details.appendChild(container);
+
             return {wrap: details, list: container};
         }
         return {wrap: container, list: container};
@@ -259,4 +261,21 @@ function showAuthPrompt(targetEl, onSave) {
     const {wrap} = createTree(root);
     treeEl.appendChild(wrap);
     build(wrap, root);
+
+    const toggleBtn = document.getElementById('toggle-tree');
+
+    if (toggleBtn) {
+        let expanded = false;
+        toggleBtn.addEventListener('click', () => {
+            expanded = !expanded;
+            toggleBtn.textContent = expanded ? 'Collapse All' : 'Expand All';
+            document.querySelectorAll('#repo-tree details').forEach((d) => {
+                if (expanded) {
+                    d.setAttribute('open', '');
+                } else {
+                    d.removeAttribute('open');
+                }
+            });
+        });
+    }
 })();
