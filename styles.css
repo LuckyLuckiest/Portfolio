@@ -665,7 +665,7 @@ body {
     text-align: right;
     color: var(--muted);
     opacity: .7;
-    border-right: 1px solid var(--border);
+    border-right: 10px solid var(--border);
     padding-right: 12px;
     vertical-align: top;
     user-select: none;
